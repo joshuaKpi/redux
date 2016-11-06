@@ -1,0 +1,26 @@
+{
+  "name": "redux",
+  "version": "1.0.0",
+  "description": "redux train",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuaKpi/redux.git"
+  },
+  "author": "joshuaKpi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuaKpi/redux/issues"
+  },
+  "homepage": "https://github.com/joshuaKpi/redux#readme",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.1"
+  }
+}
