@@ -14,11 +14,11 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler)); // Refresh modules when main.js built
 
 app.get("/", function(req, res) {
-  res.sendfile(__dirname + '/index.html')
+  res.sendFile(__dirname + '/index.html')
 });
 
 app.listen(port, function (error) {
-  if (errror) {
+  if (error) {
     console.error(error);
   } else {
     console.info("Server listening on http://localhost:%s/ ", port);
