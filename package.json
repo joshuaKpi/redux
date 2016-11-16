@@ -1,5 +1,5 @@
 {
-  "name": "redux",
+  "name": "redux-josh",
   "version": "1.0.0",
   "description": "redux train",
   "main": "index.js",
@@ -38,6 +38,8 @@
     "babel-polyfill": "^6.16.0",
     "babel-runtime": "^6.18.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0"
   }
 }
