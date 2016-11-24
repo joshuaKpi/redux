@@ -1,5 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
+var autoprefixer = require('autoprefixer');
+var precss = require('precss');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -25,7 +27,7 @@ module.exports = {
         loaders: ['eslint'],
         include: [
             path.resolve(__dirname, "src")
-        ]
+        ],
       }
     ],
     loaders: [
@@ -34,9 +36,16 @@ module.exports = {
         include: [
             path.resolve(__dirname, 'src')
         ],
-        test: /\.jsx?$/,
-        plugins: ['transform-runtime']
+        test: /\.js$/,
+        plugins: ['transform-runtime'],
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
       }
     ]
+  },
+  postcss: function() {
+    return [autoprefixer, precss];
   }
-}
+};
