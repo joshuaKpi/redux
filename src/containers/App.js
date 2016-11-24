@@ -9,10 +9,11 @@ class App extends Component {
   render() {
     const { user, page } = this.props;
     const { setYear } = this.props.pageActions;
+    const { getPhotos } = this.props.pageActions;
 
-    return <div>
+    return <div className='row'>
       <User name={user.name} />
-      <Page photos={page.photos} year={page.year} setYear={setYear} />
+      <Page photos={page.photos} year={page.year} setYear={setYear} getPhotos={getPhotos} fetching={page.fetching} />
     </div>
   }
 }
